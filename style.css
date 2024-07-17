@@ -1,0 +1,87 @@
+/* Apply a general style to all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    background-color: #9129e1;
+    color: white;
+}
+
+/* Style the body to center the content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+    margin: 0;
+}
+
+/* Style the container holding the inputs and button */
+.container {
+    background-color: rgb(156, 92, 193);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+/* Style the inputs */
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style the button */
+button {
+    background-color: rgb(140, 190, 233);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style the button on hover */
+button:hover {
+    background-color: #ccc;
+}
+
+/* Style the root div where the table will be displayed */
+#root {
+    margin-top: 20px;
+    background-color: rgb(156, 92, 193);
+    color: black;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: center;
+    display: none; /* Initially hidden until the table is generated */
+}
+
+/* Add some style to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th, td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
